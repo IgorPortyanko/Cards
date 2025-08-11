@@ -191,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.3;
 }
 .card__suit {
   position: relative;
