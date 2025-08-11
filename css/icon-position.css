@@ -1,0 +1,24 @@
+.suit-6 {
+  padding: 10px 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.suit-9 {
+  padding: 10px 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.suit-j {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

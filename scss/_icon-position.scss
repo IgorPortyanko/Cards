@@ -1,0 +1,63 @@
+.rotate {
+    transform: rotate(180deg);
+}
+
+.ab-7 {
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ab-8 {
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.ab-9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.ab-10-top {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.ab-10-bottom {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+}
+
+.suit-6 {
+    padding: 10px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.suit-9 {
+    padding: 10px 0;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.suit-j {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

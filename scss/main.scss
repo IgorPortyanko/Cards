@@ -1,0 +1,21 @@
+@use 'reset-style';
+@use 'icon-position';
+@use 'card';
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
