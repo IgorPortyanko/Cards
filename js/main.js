@@ -12,7 +12,8 @@ cards.map(el => {
                         el.suitClass, 
                         el.rotateClass, 
                         el.absoluteClass1, 
-                        el.absoluteClass2 )
+                        el.absoluteClass2,
+                        el.color)
 
     deckOfCards.push(card)
 })

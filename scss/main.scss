@@ -8,13 +8,28 @@
 }
 
 .header {
-    padding: 20px 0;
+    padding: 40px 0;
+
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+    }
 }
 
 .card-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.red{
+    color: red;
+}
+
+.black{
+    color:black;
 }
 
 

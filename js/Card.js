@@ -10,7 +10,8 @@ class Card {
                 suitClass,
                 rotateClass,
                 absoluteClass1,
-                absoluteClass2
+                absoluteClass2,
+                color
             )
         {
             this.id = id;
@@ -23,6 +24,7 @@ class Card {
             this.rotateClass = rotateClass;
             this.absoluteClass1 = absoluteClass1;
             this.absoluteClass2 = absoluteClass2
+            this.color = color
     }
 
     addIcon() {
@@ -49,7 +51,7 @@ class Card {
                         <div class="card__front">
                             <div class="card__rank">
                                 <div class="card__rank-wrapper">
-                                    <p class="card__rank-value">${this.rank}</p>
+                                    <p class="card__rank-value ${this.color}">${this.rank}</p>
                                     <img src="${this.url}" alt="${this.altText}">
                                 </div>
                             </div>
@@ -58,8 +60,8 @@ class Card {
                             </div>
                             <div class="card__rank right-rank ">
                                 <div class="card__rank-wrapper rotate">
-                                    <p class="card__rank-value">${this.rank}</p>
-                                    <img class="card__rank-icon" src="./assets/img/spade.svg" alt="spade-icon">
+                                    <p class="card__rank-value ${this.color}">${this.rank}</p>
+                                    <img class="card__rank-icon" src="${this.url}" alt="${this.altText}">
                                 </div>
                             </div>
                         </div>
