@@ -47,29 +47,29 @@ class Card {
     render(block) {
         let cardHTML = `
             <div class="card">
-                    <div class="card__inner">
-                        <div class="card__front">
-                            <div class="card__rank">
-                                <div class="card__rank-wrapper">
-                                    <p class="card__rank-value ${this.color}">${this.rank}</p>
-                                    <img src="${this.url}" alt="${this.altText}">
-                                </div>
-                            </div>
-                            <div class="card__suit ${this.suitClass}">
-                                ${this.addIcon()}
-                            </div>
-                            <div class="card__rank right-rank ">
-                                <div class="card__rank-wrapper rotate">
-                                    <p class="card__rank-value ${this.color}">${this.rank}</p>
-                                    <img class="card__rank-icon" src="${this.url}" alt="${this.altText}">
-                                </div>
+                <div class="card__inner">
+                    <div class="card__front">
+                        <div class="card__rank">
+                            <div class="card__rank-wrapper">
+                                <p class="card__rank-value ${this.color}">${this.rank}</p>
+                                <img src="${this.url}" alt="${this.altText}">
                             </div>
                         </div>
-                        <div class="card__back">
-                            <img src="./assets/img/Screenshot_3.avif" alt="card-back">
+                        <div class="card__suit ${this.suitClass}">
+                            ${this.addIcon()}
+                        </div>
+                        <div class="card__rank right-rank ">
+                            <div class="card__rank-wrapper rotate">
+                                <p class="card__rank-value ${this.color}">${this.rank}</p>
+                                <img class="card__rank-icon" src="${this.url}" alt="${this.altText}">
+                            </div>
                         </div>
                     </div>
+                    <div class="card__back">
+                        <img src="./assets/img/Screenshot_3.avif" alt="card-back">
+                    </div>
                 </div>
+            </div>
         `
 
         block.insertAdjacentHTML('beforeend', cardHTML)

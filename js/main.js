@@ -19,3 +19,17 @@ cards.map(el => {
 })
 
 deckOfCards.forEach(el => el.render(cardContainer))
+
+
+const allCards = document.querySelectorAll('.card__inner');
+
+setInterval(() => {
+  const randomCard = allCards[Math.floor(Math.random() * cards.length)];
+  
+  randomCard.classList.add('flip');
+
+  setTimeout(() => {
+    randomCard.classList.remove('flip');
+  }, 1000);
+
+}, 2000);
