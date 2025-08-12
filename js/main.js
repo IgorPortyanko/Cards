@@ -26,10 +26,12 @@ const allCards = document.querySelectorAll('.card__inner');
 setInterval(() => {
   const randomCard = allCards[Math.floor(Math.random() * cards.length)];
   
+  randomCard.classList.remove('flip-back');
   randomCard.classList.add('flip');
 
   setTimeout(() => {
     randomCard.classList.remove('flip');
+    randomCard.classList.add('flip-back');
   }, 1000);
 
 }, 2000);
